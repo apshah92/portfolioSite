@@ -21,15 +21,14 @@ export const IntroWrapper = styled.div`
 `;
 
 export const Details = styled.div`
-  flex: 1;
+  flex: 1;  
   @media (max-width: 960px) {
     width: 100%;
     margin-bottom: 2rem;
   }
   h2 {
-    margin-bottom: 2rem;
-    font-size: 30pt;
-    color: #212121; 
+    margin-bottom: 2rem;    
+    color: #484848; 
     text-align: justify;  
   }
   h3 {
@@ -41,6 +40,11 @@ export const Details = styled.div`
   p {
     text-align: justify;
     margin-bottom: 2rem;
+    font-family: Calibri;
+    font-size: 1.2em;
+    @media(min-width: 200px) {
+      width: 80%;
+    }    
   }
 `;
 

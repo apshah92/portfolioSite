@@ -1,5 +1,5 @@
 module.exports = {
-    defaultTitle: "Arpan Shah",
+    defaultTitle: "Home",
     logo: "",
     author: "",
     url: "",    

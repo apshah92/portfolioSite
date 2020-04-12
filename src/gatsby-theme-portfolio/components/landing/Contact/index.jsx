@@ -1,10 +1,16 @@
-import React from 'react';
-
+import React from "react";
+import Container from "components/common/Container";
+import TalkIllustration from "components/illustrations/TalkIllustration";
+import { Wrapper, Details, Thumbnail, MailForm } from "./styles";
 
 export default () => (
-    <div style={{textAlign:"center"}} id="contact">
-        <h3>
-        You can reach me at my email <a href="mailto:ap.59.shah@gmail.com">ap.59.shah@gmail.com</a>
-        </h3>
-    </div>
+  <Wrapper as={Container} id="contact">    
+    <Details>
+        <h2>Contact Me</h2>
+      <MailForm to="ap.59.shah@gmail.com" titlePlaceholder="Subject" contentsPlaceholder="Message" titleMaxLength="1000" contentsMaxLength="5000"/>
+    </Details>
+    <Thumbnail>
+      <TalkIllustration />
+    </Thumbnail>
+  </Wrapper>
 );

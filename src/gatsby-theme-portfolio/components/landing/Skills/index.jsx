@@ -29,7 +29,7 @@ export default () => {
           <SkillIllustration />
         </Thumbnail>
         <Details>
-          <h1>{title}</h1>
+          <h2>{title}</h2>
           <table>
             <tr>
               <td>JavaScript</td>
