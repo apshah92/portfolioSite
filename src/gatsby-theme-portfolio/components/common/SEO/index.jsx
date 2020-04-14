@@ -23,7 +23,6 @@ const SEO = ({
 		"@context": "http://schema.org",
 		"@type": "Person",
 		"legalName": "${legalName}",
-		"url": "${url}",
 		"founders": [{
 			"@type": "Person",
 			"name": "${legalName}"
