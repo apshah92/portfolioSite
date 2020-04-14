@@ -21,7 +21,7 @@ const SEO = ({
 }) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
-		"@type": "Portfolio",
+		"@type": "Person",
 		"legalName": "${legalName}",
 		"url": "${url}",
 		"founders": [{
@@ -43,7 +43,6 @@ const SEO = ({
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
-      <meta property="og:url" content={url}/>
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={Thumbnail} />
