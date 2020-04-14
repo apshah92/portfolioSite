@@ -1,15 +1,17 @@
 module.exports = {
-    defaultTitle: "Home",
+    defaultTitle: "Portfolio - Arpan Shah",
+    defaultDescription:"Checkout my codehub",
     logo: "",
-    author: "",
-    url: "",    
+    author: "arpanshah",
+    url: "arpanshah.tk",
+    legalName: "Arpan Shah",  
     socialLinks: {
       twitter: "https://twitter.com/arpan_59",
       github: "https://github.com/apshah92",
       linkedin:"https://www.linkedin.com/in/arpan-shah-157a5b47/"
     },
-    themeColor: "#6b63ff",
-    backgroundColor: "#6b63ff",
+    themeColor: "",
+    backgroundColor: "",
     social: {
       facebook: "",
       twitter: ""
