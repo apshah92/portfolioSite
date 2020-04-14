@@ -1,7 +1,29 @@
 import styled from "styled-components";
+import projectsbg from "./images/projectsbg2.jpg";
 
 export const Wrapper = styled.div`
+  background-image: url(${projectsbg});
+  background-attachment:fixed;
+  background-size:cover;
+  background-repeat:no-repeat;
+  color: white;
+  
+`
+
+export const ProjectsWrapper = styled.div`
   padding: 2rem 0;
+  .title{
+    @media(min-width: 900px){
+      height: 100px;
+      line-height: 100px;
+    }
+    h2{
+      text-align:center;
+      font-size: 30pt;
+      line-height: 100px;
+    }
+  }   
+  }  
 `;
 
 export const Content = styled.div`

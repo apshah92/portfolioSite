@@ -24,12 +24,9 @@ export default () => {
   `);
   return (
     <Wrapper id="skills">
-      <SkillsWrapper as={Container}>
-      <Thumbnail>
-          <SkillIllustration />
-        </Thumbnail>
-        <Details>
-          <h2>{title}</h2>
+      <SkillsWrapper as={Container}>               
+        <Details> 
+          <div className="title"><h2>{title}</h2></div>                 
           <table>
             <tr>
               <td>JavaScript</td>

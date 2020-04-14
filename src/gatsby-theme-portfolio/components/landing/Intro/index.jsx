@@ -13,7 +13,7 @@ import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles";
 export default () => {
   const {
     content:{
-      frontmatter:{ title, titleTwo, description_one,description_two,action}
+      frontmatter:{ title, titleTwo, action}
     }
   } = useStaticQuery(graphql`
       query {
@@ -21,8 +21,7 @@ export default () => {
           frontmatter {
             title
             titleTwo
-            description_one
-            description_two
+            
             action
           }
         }
@@ -30,20 +29,12 @@ export default () => {
     `);
   
     return (
-      <Wrapper id="about">
+      <Wrapper >
         <Header />
         <IntroWrapper as={Container}>
           <Details>
-            <Title allTitles={[title,titleTwo]} ></Title>
-            <p>{description_one}</p> 
-            <p>{description_two}</p>
-            <Button as={AnchorLink} href="#contact">
-              {action}
-            </Button>
-          </Details>
-          <Thumbnail>
-            <DevIllustration />
-          </Thumbnail>
+            <Title allTitles={[title,titleTwo]} ></Title>           
+          </Details>          
         </IntroWrapper>
       </Wrapper>
     );
