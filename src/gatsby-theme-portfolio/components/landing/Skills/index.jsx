@@ -1,12 +1,16 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import {Flex, Item} from 'react-flex-ready';
+import styled, {css} from 'styled-components';
 import Container from "gatsby-theme-portfolio/src/components/common/Container";
 import Button from "gatsby-theme-portfolio/src/components/common/Button";
 import SkillIllustration from "gatsby-theme-portfolio/src/components/illustrations/SkillIllustration";
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from "./styles";
+import { Wrapper, SkillsWrapper, Details, Thumbnail, skillContainerCss, imgCss, itemCss } from "./styles";
+import { js, react, reactnative, redux, python, sql, html, csslogo, graphql_logo, aws, git, nodejs } from "./images";
 
-export default () => {    
+export default () => {
+  var logos = [js, react,reactnative,redux,python,sql,html,csslogo,graphql_logo,aws,git,nodejs];  
   const {
     content: {
       frontmatter: { title, description, action }
@@ -26,29 +30,12 @@ export default () => {
     <Wrapper id="skills">
       <SkillsWrapper as={Container}>               
         <Details> 
-          <div className="title"><h2>{title}</h2></div>                 
-          <table>
-            <tr>
-              <td>JavaScript</td>
-              <td>React</td>
-              <td>React-Native</td>
-            </tr>
-            <tr>
-              <td>Redux</td>
-              <td>Python</td>
-              <td>SQL</td>
-            </tr>
-            <tr>
-              <td>HTML</td>
-              <td>CSS</td>
-              <td>Graphql</td>
-            </tr>
-            <tr>
-              <td>AWS</td>
-              <td>Git</td>
-              <td>Firebase</td>
-            </tr>
-          </table>
+          <div className="title"><h2>{title}</h2></div>
+          <div css={skillContainerCss}>
+            <Flex >
+              { logos.map( (item,index) => ( <Item col={4} css={itemCss}> <div css={imgCss}><img src={item} /></div> </Item> ) )}
+            </Flex>
+          </div>         
         </Details>        
       </SkillsWrapper>
     </Wrapper>
