@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import colors from "tokens/colors";
 import skillbg from "./images/skillbg.jpeg";
 
 export const Wrapper = styled.div`
   @media(min-width:1200px){
-    height: 700px;
+    height: 800px;
   }  
   background-image: url(${skillbg});
   background-attachment: fixed;
@@ -16,8 +16,13 @@ export const Wrapper = styled.div`
 
 export const SkillsWrapper = styled.div`  
   .title {
+      h2  { 
+        @media(min-width:1200px){
+            font-size: 30pt;
+        }
+      }
       margin-bottom: 2rem;
-      color: #484848;
+      color: white;
       text-align: center;
     }
   @media(min-width:900px){
@@ -57,3 +62,41 @@ export const Details = styled.div`
   
 `;
 
+export const skillContainerCss = css`
+  @media(min-width:1200px){
+    width: 1000px;
+  }
+  
+
+`
+
+export const itemCss = css`
+  width:100%;
+  height: 130px;
+  
+  margin-bottom: 20px;
+  border: 0px solid red;
+  `
+
+export const imgCss = css`
+  height:100%;
+  width:100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px; 
+
+  img{
+    height:80px;
+    width:70px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    transition: top ease 0.5s, box-shadow ease 0.5s ;
+  }  
+  img:hover {
+    top: 40%;   
+  }
+  `

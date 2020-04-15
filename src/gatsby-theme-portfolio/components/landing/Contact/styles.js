@@ -1,28 +1,35 @@
 import styled from 'styled-components'
 import Form from './form'
+import contactbg from "./images/contactbg.jpg"
 
 export const Wrapper = styled.div`
-	padding: 4rem 0;
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-	@media (max-width: 960px) {
-		flex-direction: column;
+  background-image: url(${contactbg});
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+	@media (min-width: 120px) {
+		height: 1000px;
 	}
 `
 
 export const Details = styled.div`
 	flex: 1;
 	padding-right: 2rem;
+  
+  
+
 	@media (max-width: 960px) {
 		padding-right: unset;
 		width: 100%;
 		order: 1;
 	}
-	h1 {
+	h2 {
+    margin-left: 70px;
 		margin-bottom: 2rem;
+    padding-top: 70px;
 		font-size: 26pt;
-		color: #212121;
+		color: White;
 	}
 	p {
 		margin-bottom: 2.5rem;
@@ -31,10 +38,7 @@ export const Details = styled.div`
 		line-height: 1.3;
 		color: #707070;
 	}
-    h2 {
-        color: #484848; 
-        text-align: justify;
-    }
+    
 `
 
 export const Thumbnail = styled.div`
@@ -49,7 +53,7 @@ export const Thumbnail = styled.div`
     `
 
 export const MailForm = styled(Form)`
-  margin: auto;
+  border: 0px solid black;
   max-width: 720px;
   min-height: 60vh;
   font-size: 14px;
@@ -57,13 +61,14 @@ export const MailForm = styled(Form)`
   input,
   textarea {
     display: block;
-    margin: 12px 0;
+    margin: 12px auto;
     width: 100%;
     max-width: 580px;
     border: 1px solid #555;
     border-radius: 5px;
     outline: 0;
     font-size: 16px;
+    background-color:#A9A9A9;
   }
   input {
     padding: 12px 6px;
