@@ -94,7 +94,7 @@ export default class Form extends React.Component {
       <form name="contact" method="post" css={formstyle}>
         <input type="text" name="username" placeholder="Name" required/>
         <input type="email" name="useremail" placeholder="Email" required/>
-        <textarea name="message" name="message" placeholder="Message" required />
+        <textarea name="message" name="message" placeholder="Your Message" required />
         <button type="submit" name="sendmessage">Submit</button>
       </form>
     );
