@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled,{css} from 'styled-components'
 import Form from './form'
 import contactbg from "./images/contactbg.jpg"
 
@@ -16,8 +16,6 @@ export const Wrapper = styled.div`
 export const Details = styled.div`
 	flex: 1;
 	padding-right: 2rem;
-  
-  
 
 	@media (max-width: 960px) {
 		padding-right: unset;
@@ -25,7 +23,7 @@ export const Details = styled.div`
 		order: 1;
 	}
 	h2 {
-    margin-left: 70px;
+    margin-left:3%;
 		margin-bottom: 2rem;
     padding-top: 70px;
 		font-size: 26pt;
@@ -41,62 +39,44 @@ export const Details = styled.div`
     
 `
 
-export const Thumbnail = styled.div`
-	flex: 1;
-	@media (max-width: 960px) {
-		width: 100%;
-		margin-bottom: 2rem;
-	}
-	img {
-		width: 100%;
-	}
-    `
 
-export const MailForm = styled(Form)`
-  border: 0px solid black;
-  max-width: 720px;
-  min-height: 60vh;
+export const formstyle = css`
+  border: 1px solid green;
+  @media(max-width: 400px){
+      width: 100%;
+    }  
+
+  @media(min-width: 960px){
+    width: 60%;
+  }
   font-size: 14px;
   text-align: center;
+
   input,
   textarea {
     display: block;
     margin: 12px auto;
-    width: 100%;
-    max-width: 580px;
-    border: 1px solid #555;
+    width: 90%;
+    border: 0px solid #555;
     border-radius: 5px;
     outline: 0;
     font-size: 16px;
     background-color:#A9A9A9;
+
+    @media(max-width: 400px){
+      padding: 2px;
+    }
+    @media(min-width: 960px){
+      padding: 6px;
+    }
   }
   input {
-    padding: 12px 6px;
     maxlength: 5000;
   }
   textarea{
-    padding: 6px;
-    height: 300px;
+    @media(min-width:960px){
+       height: 300px;
+    }   
   }
-  a {
-    display: block;
-    margin: auto;
-    width: 120px;
-    height: 3em;
-    line-height: 3em;
-    color: #fff;
-    background-color: #3B9CFF;
-    font-size: 16px;
-    font-weight: 900;
-    text-decoration: blink;
-    &:visited,
-    &:hover,
-    &:focus,
-    &:active {
-      color: #fff;
-    }
-    &:hover {
-      opacity: .7;
-    }
-  }
+  
 `

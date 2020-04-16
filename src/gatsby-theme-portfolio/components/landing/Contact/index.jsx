@@ -1,13 +1,13 @@
 import React from "react";
 import Container from "components/common/Container";
-import TalkIllustration from "components/illustrations/TalkIllustration";
-import { Wrapper, Details, Thumbnail, MailForm } from "./styles";
+import MailForm from './form';
+import { Wrapper, Details, Thumbnail } from "./styles";
 
 export default () => (
   <Wrapper id="contact">    
     <Details as={Container}>
-        <h2>Contact</h2>
-      <MailForm to="ap.59.shah@gmail.com" titlePlaceholder="Subject" contentsPlaceholder="Message" titleMaxLength="1000" contentsMaxLength="5000"/>
+      <h2>Contact</h2>
+      <MailForm/>
     </Details>    
   </Wrapper>
 );
