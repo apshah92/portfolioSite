@@ -96,7 +96,7 @@ export default class Form extends React.Component {
         <input type="text" name="username" placeholder="Name" required/>
         <input type="email" name="useremail" placeholder="Email" required/>
         <textarea name="message" name="message" placeholder="Your Message" required />
-        <button type="submit" name="sendmessage">Submit</button>
+        <button type="submit" class="sendbutton" name="sendmessage">Submit</button>
       </form>
     );
   }

@@ -1,21 +1,28 @@
 import styled from "styled-components";
 import colors from "tokens/colors";
-import introbg from "./images/introbg2.jpg";
+import introbg from "./images/introbg3.jpg";
 
 export const Wrapper = styled.div`
-  padding-bottom: 4rem;
-  background-image: url(${introbg});
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: right top;
-  background-repeat: no-repeat;
-  color:white;
-  @media(min-width: 900px){
+  @media(min-width: 960px){
     height: 600px;
   }
+  @media(max-width:960px){
+    background-size:contain;
+  }
+  
+    
+    background-image: url(${introbg});
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;  
+  
+  
 `;
 
+
 export const IntroWrapper = styled.div`
+  position:relative;
   padding: 4rem 0;
   display: flex;
   align-items: center;
@@ -33,7 +40,7 @@ export const Details = styled.div`
   }
   h2 {
     margin-bottom: 2rem;    
-    color: #484848; 
+    color: ; 
     text-align: justify;  
   }
   h3 {
@@ -66,8 +73,7 @@ export const Thumbnail = styled.div`
 export const TitleWrapper = styled.div`
     h2 {
         text-align:center;
-        color:  white;
-        
+        color: white;
         font-family: Cambria;
         @media(min-width:900px){
             font-size: 28pt;

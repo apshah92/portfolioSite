@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import projectsbg from "./images/projectsbg2.jpg";
+import projectsbg from "./images/projectsbg3.jpg";
 
 export const Wrapper = styled.div`
   background-image: url(${projectsbg});
@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   background-size:cover;
   background-repeat:no-repeat;
   color: white;
-  
+  opacity: 0.8;
 `
 
 export const ProjectsWrapper = styled.div`
