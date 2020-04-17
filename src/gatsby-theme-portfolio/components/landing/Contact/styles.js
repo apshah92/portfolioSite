@@ -41,7 +41,7 @@ export const Details = styled.div`
 
 
 export const formstyle = css`
-  border: 1px solid green;
+  border: 0px solid green;
   @media(max-width: 400px){
       width: 100%;
     }  
