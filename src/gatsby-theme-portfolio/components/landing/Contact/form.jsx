@@ -91,7 +91,8 @@ export default class Form extends React.Component {
 
   render(){
     return (
-      <form name="contact" method="post" css={formstyle}>
+      <form name="contact" method="post" css={formstyle} data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
         <input type="text" name="username" placeholder="Name" required/>
         <input type="email" name="useremail" placeholder="Email" required/>
         <textarea name="message" name="message" placeholder="Your Message" required />
