@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
     height: 90vh;
   }  
   border:0px solid black;
-  opacity: 0.85;
 `;
 
 // export const Details = styled.div`  

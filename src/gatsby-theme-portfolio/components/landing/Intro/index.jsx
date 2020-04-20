@@ -27,9 +27,9 @@ export default () => {
     `);
   
     return (
-      <Wrapper >
+      <Wrapper>
         <Header />
-        <IntroWrapper as={Container}>
+        <IntroWrapper as={Container} className="postSticky">
           <Details>
             <Title allTitles={[title,titleTwo,titleThree]} ></Title>  
             <AnchorLink href="#projects"><Button>Checkout My Works</Button></AnchorLink>         

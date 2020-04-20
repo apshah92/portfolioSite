@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative;
   height: 110vh;
   @media(max-width:960px){
     height: 90vh;

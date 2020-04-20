@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import introbg from "./images/intro_experiment3.png";
 
 export const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   @media(max-width:500px){
     height: 50vh;
@@ -16,18 +17,20 @@ export const Wrapper = styled.div`
 
 
 export const IntroWrapper = styled.div`
-  position:relative;
-  padding: 4rem 0;
-  display: flex;
+  border:0px solid green;
+  padding-top: 20vh;
   align-items: center;
   justify-content: space-between;
   @media (max-width: 960px) {
     flex-direction: column;
   }
+  
+  @media(min-width:960px){
+    padding-top: 30vh;
+  }
 `;
 
 export const Details = styled.div`
-  flex: 1;  
   @media (max-width: 960px) {
     width: 100%;
     margin-bottom: 2rem;
