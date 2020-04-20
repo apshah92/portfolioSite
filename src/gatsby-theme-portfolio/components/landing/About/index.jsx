@@ -23,10 +23,10 @@ export default () => {
     `);
 
     return (
-        <Wrapper id="about">
+        <Wrapper id="about" as={Container}>
             <NewWrapper >
                 <Flex>
-                    <Item col={6} gap={0} colTablet={6} colMobile={12}>
+                    <Item col={12} gap={0} colTablet={12} colMobile={12}>
                         <TextWrapper>
                             <div className="container">
                                 <div className="title"><h2>{title}</h2></div>
@@ -34,11 +34,7 @@ export default () => {
                                 <p> {description_two} </p>
                             </div>
                         </TextWrapper>
-                    </Item>
-                    <Item col={6} gap={0} colTablet={6} colMobile={12}>
-                        <SkillImg className="aboutimage">
-                        </SkillImg>
-                    </Item>
+                    </Item>                    
                 </Flex>
             </NewWrapper>              
         </Wrapper>

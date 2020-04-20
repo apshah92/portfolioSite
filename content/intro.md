@@ -1,6 +1,7 @@
 ---
 section: intro
-title: Hi there, it's Arpan.
-titleTwo: Welcome to My Hub.
+title: Software Engineering.
+titleTwo: UI/UX Development.
+titleThree: Web Development.
 action: Contact
 ---

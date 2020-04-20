@@ -1,21 +1,15 @@
 import styled from "styled-components";
-import colors from "tokens/colors";
-import introbg from "./images/introbg3.jpg";
+import introbg from "./images/intro_experiment3.png";
 
 export const Wrapper = styled.div`
-  @media(min-width: 960px){
-    height: 600px;
+  height: 100vh;
+  @media(max-width:500px){
+    height: 50vh;
   }
-  @media(max-width:960px){
-    background-size:contain;
-  }
-  
-    
-    background-image: url(${introbg});
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right top;
-    background-repeat: no-repeat;  
+  background-image: url(${introbg});
+  background-position:right top;
+  background-size: contain;
+  background-repeat: no-repeat;  
   
   
 `;
@@ -72,11 +66,25 @@ export const Thumbnail = styled.div`
 
 export const TitleWrapper = styled.div`
     h2 {
-        text-align:center;
-        color: white;
+        text-align:;
+        color: black;
         font-family: Cambria;
-        @media(min-width:900px){
-            font-size: 28pt;
-        }
+        font-weight: normal;
+        font-size: 4vw;        
     }
 `;
+
+
+export const Button = styled.button`
+    font-family: "Calibri";
+    font-weight: normal;
+    font-size: 2vw;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+    background-color: white;
+    border: 2px solid;
+    margin : 2vh 0;
+    padding: 1%;
+    
+`

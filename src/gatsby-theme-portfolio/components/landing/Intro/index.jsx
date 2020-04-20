@@ -1,19 +1,17 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Header from "gatsby-theme-portfolio/src/components/theme/Header";
 import Title from './Title';
 import Container from "gatsby-theme-portfolio/src/components/common/Container";
-import Button from "gatsby-theme-portfolio/src/components/common/Button";
-import DevIllustration from "gatsby-theme-portfolio/src/components/illustrations/DevIllustration";
-import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles";
+import { Wrapper, IntroWrapper, Details, Button } from "./styles";
 
 
     
 export default () => {
   const {
     content:{
-      frontmatter:{ title, titleTwo, action}
+      frontmatter:{ title, titleTwo, titleThree, action}
     }
   } = useStaticQuery(graphql`
       query {
@@ -21,7 +19,7 @@ export default () => {
           frontmatter {
             title
             titleTwo
-            
+            titleThree
             action
           }
         }
@@ -33,7 +31,8 @@ export default () => {
         <Header />
         <IntroWrapper as={Container}>
           <Details>
-            <Title allTitles={[title,titleTwo]} ></Title>           
+            <Title allTitles={[title,titleTwo,titleThree]} ></Title>  
+            <AnchorLink href="#projects"><Button>Checkout My Works</Button></AnchorLink>         
           </Details>          
         </IntroWrapper>
       </Wrapper>

@@ -3,10 +3,6 @@ import aboutbg from './images/about2.jpg';
 
 export const Wrapper = styled.div`    
     width: 100%;
-    height: 300px;
-    @media(min-width:900px){
-        height:600px;
-    }
 `
 
 // export const AboutWrapper = styled.div`
@@ -25,33 +21,26 @@ export const Wrapper = styled.div`
 // `
 
 export const NewWrapper = styled.div`
-    @media(max-width:400px){
-        height: auto;
-        width: 100%;
-    }
-    @media(min-width:400px){
-        height:600px;
-        width:100%; 
-    }
+    width: 100%;
 `
-export const SkillImg = styled.div`      
-    background-image: url(${aboutbg});
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right top;
-    border: 0px solid green;
-    @media(min-width:400px){
-        height:600px;
-    }
-    @media(max-width:400px){
-        height: 200px;
-    }
-`
+// export const SkillImg = styled.div`      
+//     background-image: ;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: right top;
+//     border: 0px solid green;
+//     @media(min-width:400px){
+//         height:600px;
+//     }
+//     @media(max-width:400px){
+//         height: 200px;
+//     }
+// `
 
 export const TextWrapper = styled.div`
-    border: 0px solid red;
-    height:600px;
+    border: 1px solid black;
+    height: 70vh;
     width: 100%;
     position: relative;   
     .container{

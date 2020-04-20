@@ -47,9 +47,10 @@ export default () => {
     <Wrapper id="projects">      
       <ProjectsWrapper as={Container}> 
       <div className="title"><h2>Projects</h2></div>       
-        <div style={{width:"100%",height:"auto", margin:"70px auto 100px auto"}}>
+        <div style={{width:"90%",height:"auto", margin:"70px auto 100px auto", boxShadow: "2px 3px 5px 2px", padding:"5%"}}>
           <Flex>
             <Item key={1} col={6}>
+              <h3>Google Books Library</h3>
               <video height="auto" width="100%" autoplay="true" muted="true" loop="true" controls >
                 <source src={projectVideo} type="video/mp4" />
               </video>

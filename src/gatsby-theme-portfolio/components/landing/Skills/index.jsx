@@ -27,18 +27,15 @@ export default () => {
     }
   `);
   return (
-    <Wrapper id="skills">
-      <SkillsWrapper>       
-          <Flex >
-            <Item col={6} gap={0} colTablet={6} colMobile={6} >
-              <SkillImg/>
-            </Item>
-            <Item col={6} gap={0} colTablet={6} colMobile={6}>
+    <Wrapper id="skills" as={Container}>
+      <SkillsWrapper >       
+          <Flex >            
+            <Item col={12} gap={1} colTablet={12} colMobile={12}>
               <SkillIcons>
                 <div className="title"><h2>{title}</h2></div>
                 <div css={skillContainerCss}>
                   <Flex col={12} className="flexDiv">
-                    { logos.map( (item,index) => ( <Item col={4} colTablet={1} colMobile={1} css={itemCss}> <div css={imgCss}><img src={item} /></div> </Item> ) )}
+                    { logos.map( (item,index) => ( <Item col={4} colTablet={4} colMobile={2} css={itemCss}> <div css={imgCss}><img src={item} /></div> </Item> ) )}
                   </Flex>
                 </div>
               </SkillIcons>

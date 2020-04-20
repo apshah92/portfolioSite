@@ -2,12 +2,10 @@ import styled from "styled-components";
 import projectsbg from "./images/projectsbg3.jpg";
 
 export const Wrapper = styled.div`
-  background-image: url(${projectsbg});
+  background-image:;
   background-attachment:fixed;
   background-size:cover;
   background-repeat:no-repeat;
-  color: white;
-  opacity: 0.8;
 `
 
 export const ProjectsWrapper = styled.div`

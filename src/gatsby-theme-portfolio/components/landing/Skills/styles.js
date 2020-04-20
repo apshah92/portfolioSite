@@ -3,10 +3,11 @@ import colors from "tokens/colors";
 import skillbg from "./images/skillbg2.jpg";
 
 export const Wrapper = styled.div`
-  @media(min-width:1200px){
-    height: 700px;
+  height: 40vh;
+  @media(min-width:960px){
+    height: 90vh;
   }  
-  
+  border:0px solid black;
   opacity: 0.85;
 `;
 
@@ -33,29 +34,32 @@ export const Wrapper = styled.div`
   
 // `;
 
-export const SkillsWrapper = styled.div`  
+export const SkillsWrapper = styled.div` 
+  height: 100%;
+  width: 100%;
+  border: 0px solid blue;
 `;
 
-export const SkillImg = styled.div`
-    background-image: url(${skillbg});
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: left top;
-    background-repeat: no-repeat;
-    border: 0px solid green;
-    @media(min-width:400px){
-        height:700px;
-    }
-    @media(max-width:400px){
-        height: 200px;
-    }
-`
+// export const SkillImg = styled.div`
+//     background-image: url(${skillbg});
+//     background-attachment: fixed;
+//     background-size: contain;
+//     background-position: left top;
+//     background-repeat: no-repeat;
+//     border: 0px solid green;
+//     @media(min-width:400px){
+//         height:700px;
+//     }
+//     @media(max-width:400px){
+//         height: 200px;
+//     }
+// `
 
 export const SkillIcons = styled.div`
   .title {
-      height:10%;
+      height:15%;
       h2  { 
-        @media(min-width:1200px){
+        @media(min-width:960px){
             font-size: 30pt;
         }
       }
@@ -63,45 +67,46 @@ export const SkillIcons = styled.div`
       text-align: center;
     }
   @media(min-width:960px){
-      line-height:2;
-  }
-  @media(min-width:1200px){
-    height:700px ;
-  }
-  
-
+      line-height:2;  
+      height: 100%;
+      width:100%;    
+  }  
 `
 
 export const skillContainerCss = css`
-  height:90%;
+  height:85%;
   width:100%;
-  border:0px solid red;
-  padding-left: 20%;
-  padding-top: 10%;
+  margin: auto;
+  border:0px solid red;  
   box-sizing: border-box;
+  @media(min-width: 960px){
+    padding-left: 0vw;
+    width: 80%;
+  }
   
 `
 
-// export const itemCss = css`
-//   width:100%;
-//   height: 130px;
-  
-//   margin-bottom: 20px;
-//   border: 0px solid red;
-//   `
+export const itemCss = css`
+  height: 10vh;
+  @media(min-width:700px){
+    height: 15vh;
+  }
+  margin-bottom: 20px;
+  border: 0px solid yellow;
+  `
 
 export const imgCss = css`
-  height:80px;
-  width:70px;
+  height:100%;
   position: relative;
   cursor: pointer;
   border-radius: 10px; 
   margin-bottom: 20%;
-  margin-right: 20%;
   img{
-    height:80px;
-    width:70px;
-    
+    height:75%;
+    width:22%;
+    @media(max-width:500px){
+      width: 80%;
+    }
     position: absolute;
     top: 50%;
     left:50%;
