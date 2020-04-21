@@ -22,7 +22,8 @@ export const Wrapper = styled.div`
 
 export const NewWrapper = styled.div`
     width: 100%;
-    font-family: calibri;
+    font-family: calibri,"Lucida Grande";
+    color: #006666;
     box-shadow: 2px 5px 10px grey;
 `
 // export const SkillImg = styled.div`      
@@ -57,5 +58,10 @@ export const TextWrapper = styled.div`
     }
     .title {
         text-align: center;
+        color: #e64d00;
+        font-family: calibri;
+    }
+    p {
+        font-size:1.1em;
     }
 `
