@@ -32,7 +32,7 @@ export default () => {
         <IntroWrapper as={Container} className="postSticky">
           <Details>
             <Title allTitles={[title,titleTwo,titleThree]} ></Title>  
-            <AnchorLink href="#projects"><Button>Checkout My Works</Button></AnchorLink>         
+            <AnchorLink href="#works"><Button>Checkout My Works</Button></AnchorLink>         
           </Details>          
         </IntroWrapper>
       </Wrapper>

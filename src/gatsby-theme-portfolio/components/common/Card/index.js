@@ -6,7 +6,8 @@ const Card = styled.div`
   width: 100%;
   overflow: hidden;
   box-shadow: 2px 3px 5px 2px grey;
-
+  border: 1px solid black;
+  border-radius: 5px;
   h4 {
     color: #212121;
   }

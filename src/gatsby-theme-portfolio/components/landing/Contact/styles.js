@@ -1,6 +1,4 @@
 import styled,{css} from 'styled-components'
-import Form from './form'
-import contactbg from "./images/contactbg.jpg"
 
 export const Wrapper = styled.div`
   box-size: border-box;
@@ -67,7 +65,6 @@ export const formstyle = css`
     border-radius: 5px;
     outline: 0;
     font-size: 16px;
-    background-color:#A9A9A9;
 
     @media(max-width: 960px){
       padding: 2px;
@@ -82,6 +79,9 @@ export const formstyle = css`
   }
   textarea{
     height: 40vh;
+  }
+  .sendbutton {
+    cursor: pointer;
   }
   
 `

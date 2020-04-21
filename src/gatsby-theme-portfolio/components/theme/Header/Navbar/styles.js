@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 export const NavWrapper = styled.div`
 	width:80%;
 	margin: auto;
-	padding: 1.5rem 0;
+	padding: 0.5rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -29,4 +29,8 @@ export const NavWrapper = styled.div`
 	a {
 		color: black;
 	}
+	h4 {
+		padding-top: 1.5rem;
+	}
+	
 `

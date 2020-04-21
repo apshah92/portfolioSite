@@ -4,7 +4,6 @@ import colors from "tokens/colors";
 export const Wrapper = styled.div`
   height: 100px;
   width:100%;
-  background-color:black;   
   @media(max-width:960px){
     height:auto;
   }
@@ -12,9 +11,10 @@ export const Wrapper = styled.div`
 
 
 export const InfoWrapper = styled.div`  
-  color:white;
+  color:black;
   height: 100%;
-  border: 0px solid green;
+  border-top: 0.1px solid grey;
+  
 `;
 
 

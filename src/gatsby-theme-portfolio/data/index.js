@@ -1,6 +1,6 @@
 module.exports = {
-    defaultTitle: "Portfolio - Arpan Shah",
-    defaultDescription:"Checkout my codehub",
+    defaultTitle: "Arpan Shah",
+    defaultDescription:"Checkout My Works",
     logo: "",
     author: "arpanshah",
     url: "arpanshah.tk",

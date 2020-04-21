@@ -8,7 +8,6 @@ import { Wrapper, NavWrapper } from "./styles";
 export default  class Navbar extends React.Component {
   constructor(props){
     super(props);
-    this.navref = React.createRef();
     this.makeNavSticky = this.makeNavSticky.bind(this);
     this.state = {
       navClasses : ""
@@ -30,9 +29,9 @@ export default  class Navbar extends React.Component {
   }
 
   render(){
-    return (<Wrapper className={this.state.navClasses} ref={this.navref}>
+    return (<Wrapper className={this.state.navClasses} >
       <NavWrapper as={Container} >
-        <h3><Link to="/">Home</Link></h3>
+        <h4><Link to="/">Home</Link></h4>
         <NavbarLinks desktop />
       </NavWrapper>
     </Wrapper>);

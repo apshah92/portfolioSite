@@ -22,6 +22,8 @@ export const Wrapper = styled.div`
 
 export const NewWrapper = styled.div`
     width: 100%;
+    font-family: calibri;
+    box-shadow: 2px 5px 10px grey;
 `
 // export const SkillImg = styled.div`      
 //     background-image: ;
@@ -40,7 +42,7 @@ export const NewWrapper = styled.div`
 
 export const TextWrapper = styled.div`
     border: 1px solid black;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     position: relative;   
     .container{

@@ -17,12 +17,31 @@ export const ProjectsWrapper = styled.div`
     }
     h2{
       text-align:center;
-      font-size: 30pt;
+      @media(min-width:700px){
+        font-size: 30pt;
+      }
       line-height: 100px;
     }
   }   
   }  
 `;
+
+export const VideoWrapper = styled.div`
+  width:90%;
+  height:auto;
+  margin:70px auto 100px auto;
+  box-shadow: 2px 2px 10px grey;
+  border: 1px solid;
+  padding:5%;
+`
+
+
+
+export const ParaWrapper = styled.div`
+  padding-top: 10%;
+  font-family: calibri;
+  `
+
 
 export const Content = styled.div`
   padding: 1rem 0;
