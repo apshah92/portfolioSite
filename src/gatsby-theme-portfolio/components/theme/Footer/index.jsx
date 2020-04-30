@@ -19,7 +19,7 @@ export default () => (
             <SocialIcon url="https://github.com/apshah92" />            
           </Item>
           <Item col={1} colMobile={4} colTablet={2}>
-            <SocialIcon url="mailto:ap.59.shah@gmail.com" />           
+            <SocialIcon url="mailto:arpanshah.us@gmail.com" />           
           </Item>
         </Flex>
       </InfoWrapper>

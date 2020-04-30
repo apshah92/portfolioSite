@@ -1,27 +1,21 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import {Flex, Item} from 'react-flex-ready';
-import styled, {css} from 'styled-components';
 import Container from "gatsby-theme-portfolio/src/components/common/Container";
-import Button from "gatsby-theme-portfolio/src/components/common/Button";
-import SkillIllustration from "gatsby-theme-portfolio/src/components/illustrations/SkillIllustration";
-import { Wrapper, SkillsWrapper, Details, skillContainerCss, SkillImg, SkillIcons, imgCss, itemCss } from "./styles";
+import { Wrapper, SkillsWrapper, skillContainerCss, SkillIcons, imgCss, itemCss } from "./styles";
 import { js, react, reactnative, redux, python, sql, html, csslogo, graphql_logo, aws, git, nodejs } from "./images";
 
 export default () => {
   var logos = [js, react,reactnative,redux,python,sql,html,csslogo,graphql_logo,aws,git,nodejs];  
   const {
     content: {
-      frontmatter: { title, description, action }
+      frontmatter: { title}
     }
   } = useStaticQuery(graphql`
     query {
       content: markdownRemark(frontmatter: { section: { eq: "skills" } }) {
         frontmatter {
-          title
-          description
-          action
+          title          
         }
       }
     }
